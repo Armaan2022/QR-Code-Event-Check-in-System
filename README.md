@@ -25,3 +25,7 @@ Geolocation Verification:
 Image Upload:
 
 - Allow organizers to upload event posters and attendees to upload profile pictures for a more personalized experience.
+
+
+    * [Storyboard](https://github.com/CMPUT301W24T35/QRCheckIn/wiki/Storyboard)
+    * [UI Mockup](https://github.com/CMPUT301W24T35/QRCheckIn/wiki/UI-Mockup)
