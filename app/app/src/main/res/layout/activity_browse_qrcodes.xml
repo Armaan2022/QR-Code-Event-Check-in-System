@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#111834"
+    tools:context=".MainActivity">
+    <ImageButton
+        android:id="@+id/button_backArrow"
+        android:layout_width="35dp"
+        android:layout_height="44dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADMIN"
+            android:textColor="@color/White"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse QR Codes"
+        android:textColor="@color/White"
+        android:paddingStart="16dp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="20sp">
+    </TextView>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:background="#0073C0"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-6dp"
+        >
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QR Codes"
+        android:textColor="@color/White"
+        android:paddingStart="16dp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp">
+    </TextView>
+    <GridView
+        android:id="@+id/qrcode_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:padding="8dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth" />
+
+
+
+</LinearLayout>

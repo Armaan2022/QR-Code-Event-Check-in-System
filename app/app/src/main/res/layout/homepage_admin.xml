@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#111834"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADMIN"
+            android:textColor ="@color/White"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/White"
+            android:text="EXIT ADMIN"
+            app:cornerRadius="10dp"
+            android:backgroundTint="#FF0000"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Events"
+        android:textColor="@color/White"
+        android:paddingStart="16dp"
+        android:textStyle="bold"
+        android:paddingTop = "16dp"
+        android:paddingBottom="16dp"
+        android:textSize="18dp">
+    </TextView>
+    <View
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:background="#0073C0"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-6dp"
+        >
+    </View>
+    <ListView
+        android:padding="10dp"
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_admin_profiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="Events"
+            android:contentDescription="Events information"
+            android:text="VIEW PROFILES"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#3D5AF1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_admin_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW IMAGES"
+            app:backgroundTint="#3D5AF1"
+            android:textColor="@android:color/white"
+            android:autofillHints="check in"
+            android:contentDescription="scan QR code" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@drawable/rounded_corner">
+
+    <TextView
+        android:id="@+id/announcement_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:maxLength="50"
+        android:text="Announcement"
+        android:background="#102341"
+        android:textColor="@color/White"
+        android:padding="5dp"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+</LinearLayout>

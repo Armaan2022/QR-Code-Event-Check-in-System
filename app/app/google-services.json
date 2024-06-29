@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "983174279309",
+    "project_id": "qrcheckin-5a3d1",
+    "storage_bucket": "qrcheckin-5a3d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983174279309:android:4566f44d50a9b2b114b2c4",
+        "android_client_info": {
+          "package_name": "com.example.qrcheckin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXNCD6FMwWRu-3NdptIhfrL_iV8ozb1Cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event QR Code"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/MainTextTitle"/>
+    <ImageView
+        android:id="@+id/checkinQRCodeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="20dp"
+        android:src="@drawable/qr_code_placeholder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/generateCheckinQRCodeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#3D5AF1"
+            android:text="Generate QR Code"
+            android:layout_marginRight="40dp"
+            />
+        <Button
+            android:id="@+id/reuseCheckinQRCodeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#3D5AF1"
+            android:text="Reuse QR Code"
+            />
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/confirmEventCreationButton"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#3D5AF1"
+        android:text="Confirm"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

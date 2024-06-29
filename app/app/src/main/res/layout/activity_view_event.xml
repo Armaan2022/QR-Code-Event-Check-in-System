@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="35dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_arrow_back" />
+        <TextView
+            android:id="@+id/viewEventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/MainTextTitle"
+            android:padding="20dp"
+            android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/posterArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="100">
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#111834">
+
+            <ImageView
+                android:id="@+id/posterImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:padding="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+        <Button
+            android:id="@+id/DeletePosterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="DELETE POSTER"
+            android:backgroundTint="#FF0000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:text="@string/event_details"
+                />
+            <View
+                android:layout_width="90dp"
+                android:layout_height="4dp"
+                android:background="#0073C0"
+                android:paddingStart="16dp"
+                tools:ignore="RtlSymmetry"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="18dp">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/Gray"
+                    android:textSize="15sp"
+                    android:text="Description "/>
+                <TextView
+                    android:id="@+id/eventDescriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="xyzdfgh"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/White"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="18dp">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/Gray"
+                    android:textSize="15sp"
+                    android:text="Start "/>
+                <TextView
+                    android:id="@+id/eventStartText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/White"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="18dp">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/Gray"
+                    android:textSize="15sp"
+                    android:text="End "/>
+                <TextView
+                    android:id="@+id/eventEndText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/White"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/Gray"
+                    android:textSize="15sp"
+                    android:text="Location "/>
+                <TextView
+                    android:id="@+id/eventLocationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CCIS L1-160"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/White"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Checkin QR Code"
+            android:textColor="@color/MainTextTitle"
+            android:layout_gravity="left"
+            android:padding="20dp"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:id="@+id/qrCodeImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/qr_code_placeholder" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/share"
+                android:id="@+id/button_share"
+                android:paddingEnd="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/share_qr_code"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/promoQRCodeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Promo QR Code"
+            android:textColor="@color/MainTextTitle"
+            android:layout_gravity="left"
+            android:textSize="17sp"
+            android:padding="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/promoQRArea"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:id="@+id/promoqrCodeImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/qr_code_placeholder" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/share"
+                android:id="@+id/promo_button_share"
+                android:paddingEnd="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/share_promo_qr_code"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:weightSum="100">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:text="@string/announcements" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="60pt"
+                    android:src="@drawable/plus"
+                    android:id="@+id/button_add_announcement"
+                    android:paddingEnd="0dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/share_qr_code"/>
+            </LinearLayout>
+            <View
+                android:layout_width="110dp"
+                android:layout_height="4dp"
+                android:background="#0073C0"
+                android:paddingStart="16dp"
+                android:layout_marginStart="20dp"
+                tools:ignore="RtlSymmetry"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <ListView
+                android:id="@+id/announcement_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </ListView>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:weightSum="100"
+            android:visibility="gone"
+            android:id="@+id/signInButtonArea">
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                app:backgroundTint="#3D5AF1"
+                android:textColor="@color/White"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:paddingTop="20dp"
+            android:id="@+id/attendeesInfo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:paddingStart="20dp"
+                android:text="@string/attendees" />
+            <View
+                android:layout_width="110dp"
+                android:layout_height="4dp"
+                android:background="#0073C0"
+                android:paddingStart="16dp"
+                android:layout_marginStart="20dp"
+                tools:ignore="RtlSymmetry"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp">
+            </View>
+            <ListView
+                android:id="@+id/attendees_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </ListView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:paddingTop="10dp"
+            android:id="@+id/signedAttendeesInfo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:paddingStart="20dp"
+                android:text="Signed-up Attendees" />
+            <View
+                android:layout_width="110dp"
+                android:layout_height="4dp"
+                android:background="#0073C0"
+                android:paddingStart="16dp"
+                android:layout_marginStart="20dp"
+                tools:ignore="RtlSymmetry"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp">
+            </View>
+            <ListView
+                android:id="@+id/signedAttendees_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </ListView>
+        </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="100"
+        android:id="@+id/eventButtons">
+
+        <Button
+            android:id="@+id/EventDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE EVENT"
+            android:visibility="gone"
+
+            android:backgroundTint="#FF0000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/viewMapButton"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/setMileStoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET MILESTONE"
+            android:textColor="#111834"
+            android:backgroundTint="#BFBFBF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/viewMapButton"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/viewMapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_map"
+            app:layout_constraintStart_toEndOf="@id/setMileStoneButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

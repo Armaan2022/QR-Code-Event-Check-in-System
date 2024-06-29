@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Edit Events" pattern="src[QRCheckin.app.main]:com.example.qrcheckin.EditEventActivity" />
+</component>

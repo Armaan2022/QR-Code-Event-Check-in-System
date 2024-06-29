@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="White">#FFFFFF</color>
+    <color name="Background">#111834</color>
+    <color name="ElementBackground">#102341</color>
+    <color name="Button">#3D5AF1</color>
+    <color name="MainTextTitle">#FAFAFA</color>
+    <color name="BodyText">#FAFAFA</color>
+    <color name="Line">#0073C0</color>
+    <color name="SecondaryButton">#3E4E88</color>
+    <color name="DangerButton">#FF7373</color>
+    <color name="Gray">#636366</color>
+</resources>

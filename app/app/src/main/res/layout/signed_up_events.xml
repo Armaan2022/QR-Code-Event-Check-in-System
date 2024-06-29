@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#111834"
+    tools:context=".SignedUpEventActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attendee"
+            android:textColor ="@color/White"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/deafult_profile_photo"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:contentDescription="default profile photo"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signed Up Events"
+        android:textColor="@color/White"
+        android:paddingStart="16dp"
+        android:textStyle="bold"
+        android:paddingTop = "16dp"
+        android:paddingBottom="16dp"
+        android:textSize="18dp">
+    </TextView>
+    <View
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:background="#0073C0"
+        android:layout_marginTop="-6dp"
+        android:layout_marginStart="18dp">
+    </View>
+    <ListView
+        android:padding="10dp"
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            app:backgroundTint="#3D5AF1"
+            android:textColor="@android:color/white"
+            android:autofillHints="Events"
+            android:contentDescription="Events information" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_check_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECK IN"
+            app:backgroundTint="#3D5AF1"
+            android:textColor="@android:color/white"
+            android:autofillHints="check in"
+            android:contentDescription="scan QR code" />
+
+    </LinearLayout>
+
+</LinearLayout>

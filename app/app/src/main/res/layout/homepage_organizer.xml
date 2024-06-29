@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#111834"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Organizer"
+            android:textColor ="@color/White"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical"/>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/deafult_profile_photo"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:contentDescription="default profile photo"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Organized Events"
+        android:textColor="@color/White"
+        android:paddingStart="16dp"
+        android:textStyle="bold"
+        android:paddingTop = "16dp"
+        android:paddingBottom="16dp"
+        android:textSize="18dp">
+    </TextView>
+    <View
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:background="#0073C0"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-6dp"
+        >
+    </View>
+    <ListView
+        android:padding="10dp"
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_back_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            app:backgroundTint="#3D5AF1"
+            android:textColor="@android:color/white"
+            android:autofillHints="Events"
+            android:contentDescription="Go back" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_create_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE EVENT"
+            app:backgroundTint="#3D5AF1"
+            android:textColor="@android:color/white"
+            android:autofillHints="check in"
+            android:contentDescription="scan QR code" />
+
+    </LinearLayout>
+
+</LinearLayout>

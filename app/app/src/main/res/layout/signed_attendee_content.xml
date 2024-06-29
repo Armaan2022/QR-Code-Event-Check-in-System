@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@drawable/rounded_corner">
+
+    <TextView
+        android:id="@+id/attendee_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:maxLength="50"
+        android:text="Attendee"
+        android:background="#102341"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:paddingStart="20dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+    <TextView
+        android:id="@+id/check_in_times_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="@drawable/rounded_corner"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        android:maxLines="1"
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>
