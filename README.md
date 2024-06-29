@@ -27,5 +27,6 @@ Image Upload:
 - Allow organizers to upload event posters and attendees to upload profile pictures for a more personalized experience.
 
 
-UI MOCKUP: 
+# UI MOCKUP: 
+* This is the final design of the final app.
 ![Slice 1UI Mockup](https://github.com/CMPUT301W24T35/QRCheckIn/assets/61857814/bd2f1d1e-213e-4c63-b371-eae4461cea41)
