@@ -1,6 +1,6 @@
 # QR Code Event Check-In System
 
-You are to design and implement a simple, attractive, and easy-to-use Android application to satisfy the following goals. Your design must be flexible enough to allow developers to extend or migrate it.
+To design and implement a simple, attractive, and easy-to-use Android application to satisfy the following goals. The design must be flexible enough to allow developers to extend or migrate it.
 
 # Description: 
 Create an event management system where attendees check in using QR codes on their mobile devices. Organizers can track attendance, manage event details, and send notifications.
